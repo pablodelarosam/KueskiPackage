@@ -38,7 +38,7 @@ open class KueskiCustomButton: UIView {
     }
      private func commonInit() {
         
-        self.backgroundColor = .red
+        self.backgroundColor = .green
         self.setTitle("knOM", for: .normal)
         
     }
