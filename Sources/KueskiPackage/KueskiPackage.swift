@@ -28,3 +28,24 @@ open class KueskiCustomButton: UIView {
         super.init(coder: coder)
     }
 }
+
+
+@IBDesignable public class KnobButton: UIButton {
+    
+    public override init(frame: CGRect) {
+      super.init(frame: frame)
+      commonInit()
+    }
+     private func commonInit() {
+        
+        self.backgroundColor = .red
+        self.setTitle("knOM", for: .normal)
+        
+    }
+
+    public required init?(coder aDecoder: NSCoder) {
+      super.init(coder: aDecoder)
+      commonInit()
+    }
+    
+}
